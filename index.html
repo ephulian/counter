@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: darkseagreen;
+            box-sizing: border-box;
+        }
+
+        button{
+            font-weight: bold;
+            outline:none;
+            border: none;
+            padding: 0.5rem 2rem;
+            margin: 0 1rem;
+            border-radius: 5px;
+            transition: all 0.1s linear;
+            box-shadow: 7px 7px black;
+        }
+
+        button:hover{
+            /* border: 2px solid black; */
+            /* margin: 0 5rem; */
+            background-color: coral;
+        }
+
+        button:active{
+            color:;
+            background-color: lightgray;
+            /* border: 5px solid black; */
+            /* border-radius: 10px; */
+            box-shadow: none;
+        }
+
+        .count-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* padding-bottom: 4rem; */
+        }
+
+        .current-count{
+            font-size: 6rem;
+            /* box-shadow: 5px 5px black; */
+        }
+
+        .red{
+            color:red;
+        }
+
+        .green{
+            color:green;
+        }
+
+        .gray{
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="count-container">
+        <h2 class="count">current count is:</h1>
+        <h1 class="current-count" id="current-count">0</h1>
+    </div>
+    <div class="btn-container">
+        <button class="decrease" id="decrease-btn">decrease</button>
+        <button class="reset" id="reset-btn">reset</button>
+        <button class="increase" id="increase-btn">increase</button>
+    </div>
+    <script src="./app2.js"></script>
+</body>
+</html>
